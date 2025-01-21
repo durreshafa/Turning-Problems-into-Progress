@@ -1,6 +1,5 @@
 class Solution:
     def triangleType(self, nums: List[int]) -> str:
-        nums.sort()
         x,y,z = nums
         if x+y <= z or y+z <= x or z+x <= y:
             return "none"
